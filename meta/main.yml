@@ -1,0 +1,15 @@
+dependencies:
+- role: qinzx.jdk
+  version: 1.8.0_171
+- role: qinzx.zookeeper
+  version: 3.6.1
+galaxy_info:
+  author: qinzx
+  description: install a hadoop cluster,includes jdk、zookeeper
+  galaxy_tags:
+  - hadoop
+  - hdfs
+  min_ansible_version: 2.9.0
+  platforms:
+  - name: centos
+    version: 7.4

@@ -1,0 +1,8 @@
+hadoop_name: hadoop-3.2.1
+hadoop_soft_name: hadoop-3.2.1.tar.gz
+hadoop_path: /opt/hadoop
+zookeeper_name: apache-zookeeper-3.6.1-bin
+zookeeper_soft_name: apache-zookeeper-3.6.1-bin.tar.gz
+zookeeper_path: /opt/zookeeper
+jdk_archive: /root/hadoop/3.2.1/jdk-8u171-linux-x64.tar.gz
+jdk_name: jdk1.8.0_171

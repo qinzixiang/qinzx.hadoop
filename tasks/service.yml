@@ -1,0 +1,3 @@
+---
+- name: start hdfs
+  shell: start-dfs.sh
