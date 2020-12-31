@@ -1,3 +1,13 @@
 ---
-- name: start hdfs
-  shell: start-dfs.sh
+- name: check dfs status
+  shell: jps -l | grep -wq "hadoop" && echo 1 ||echo 0
+  register: dfs_status
+- when: dfs_status.stdout == "0"
+  name: start hdfs
+  block:
+    - name: format zk metadata
+      shell: hdfs namenode -format
+      connection: local
+      run_once: true
+    - name: start dfs
+      shell: start-dfs.sh
