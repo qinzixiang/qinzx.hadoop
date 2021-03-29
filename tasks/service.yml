@@ -9,5 +9,6 @@
       shell: hdfs namenode -format
       connection: local
       run_once: true
+      ignore_errors: true
     - name: start dfs
       shell: start-dfs.sh
